@@ -22,6 +22,9 @@ export default class Time {
   }
 
   getRemainTime(): number {
-    return 24 - this.date.getHours()
+    let fullHours: number = new Date(this.date.getFullYear(), this.date.getMonth() + 1, 0).getDate() * 24;
+    let currentHours: number = this.date.getDate() * 24;
+
+    return fullHours - currentHours;
   }
 }
