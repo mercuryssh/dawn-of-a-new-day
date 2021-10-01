@@ -14,14 +14,14 @@ const App: Component = (): JSXElement => {
 
   return (
     <Container>
-      <div class="display">
+      <main class="display">
         <p>{getTime().getSet()} of</p>
         <span>{getTime().getDay()} Day</span>
         <p>
           -<span>{getTime().getRemainTime()}</span>
           {' '}Hours Remain-
         </p>
-      </div>
+      </main>
     </Container>
   )
 }
